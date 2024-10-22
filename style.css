@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar{
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+.sidebar-nav .logo{
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.sidebar-nav{
+   border-radius: 10px;
+   padding: 15px 10px;
+   margin-bottom: 10px;
+}
+.sidebar-nav ul{
+   list-style: none;
+  margin-top: 5px;
+}
+.sidebar-nav ul li{
+   padding:10px 20px;
+   font-size: 16px;
+   font-weight: 600;
+}
+.sidebar-nav ul li a{
+ text-decoration: none;
+ color: gray;
+}
+.sidebar-nav ul li a:hover{
+ 
+ color: rgb(255, 255, 255);
+ transition: 1s;
+}
+
+
+.a1{
+   font-size: 16px;
+   font-weight: 600;
+   text-decoration: none;
+   color: gray;
+}
+.a1:hover{
+    color: white;
+    transition: 1s;
+}
+.sidebar-nav ul li i{
+   font-size: 20px;
+   margin-right: 10px;
+}
+.sidebar-nav .logo img{
+    width: 100%;
+}
+.a1 .library::after{
+      content: '+';
+      float: right;
+      padding-right:5px;
+      font-size: 16px;
+}
+.create-playlist{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(53 60 65);
+}
+.create-playlist h5{
+   font-size: 18px;
+}
+.create-playlist p{
+   font-size: 13px;
+}
+.create-playlist button{
+   font-size: 10px;
+   padding: 10px 15px ;
+   border: 0;
+   outline: 0;
+   border-radius: 20px;
+   font-weight: 600;
+}
+.create-playlist button:hover{
+    background-color: rgb(187, 187, 187);
+}
+.sidebar-scroll{
+    height: 180px;
+    overflow-y: auto;
+
+
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 10px;
+}
+
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: rgb(172, 172, 172);
+    width: 5px;
+   
+}
+.privacy ul li a{
+    font-size: 12px;
+    font-weight: 600;
+    margin:0 5px;
+}
+.privacy ul{
+   list-style: none;
+   text-align: left;
+   margin-bottom: 10px;
+}
+.privacy ul li{
+    padding: 0;
+    padding-bottom: 8px;
+}
+.btn button{
+margin-left: 20px;
+padding: 5px 30px;
+background: transparent;
+border-radius: 20px;
+border: 0;
+outline: none;
+border: 1px solid rgb(118, 116, 116);
+color: white;
+}
+.btn button:hover{
+    border: 1px solid white;
+    
+}
+.song-section{
+    margin-left: 300px;
+    background-color:rgb(27, 27, 27);
+    height: 100%; 
+    overflow-y: auto;   
+    margin-bottom: 85px;
+    border-radius: 10px;
+}
+.top-nav{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+   
+   
+}
+.prev-btn button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.prev-btn button i{
+   margin-right: 20px;
+}
+
+
+.signup{
+    color: gray;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 600;
+   margin-right: 30px;
+}
+.signup:hover{
+    color: white;
+}
+.login{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.login:hover{
+    background-color: rgb(211, 211, 211);
+}
+.playlist{
+    padding: 20px 40px;
+}
+.playlist h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.playlist h2:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+.row{
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+.col:hover{
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    
+}
+.col img{
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.col h6{
+    color: white;
+    font-weight: 600;
+    margin:0 5px;
+    margin-top: 10px;
+}
+.col p{
+    color: rgb(143, 142, 142);
+    margin:0 5px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.col p:hover{
+    text-decoration: underline;
+    color: rgb(143, 142, 142);
+}
+.play{
+    position: relative;
+}
+
+.play i{
+    position: absolute;
+    background: rgb(50, 222, 20);
+    border-radius: 50%;
+    padding: 15px;
+    right: 4px;
+    top: -50px;
+    opacity: 0;
+}
+
+.col:hover .play i
+{
+    opacity: 1;
+    filter: drop-shadow(2px 4px 6px black);
+
+}
+
+.play i:hover{
+    padding: 16px;
+    background:  rgb(59, 220, 31);
+}
+.row1{
+    display: flex;
+    margin-left: 30px;
+}
+.row1 p{
+    margin:0 15px;
+}
+footer h6{
+    color: white;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 16px;
+}
+footer ul{
+   list-style: none;
+   
+}
+footer ul li{
+   list-style: none;
+   margin: 6px 0;
+}
+footer ul li a{
+   text-decoration: none;
+   color: rgb(143, 142, 142);
+
+}
+footer ul li a:hover{
+   color: white;
+   text-decoration: underline;
+}
+footer .socialmedia{
+    color: white;
+    padding-left: 100px;
+    
+    
+}
+footer .socialmedia i{
+    margin: 5px;
+    padding: 12px;
+    background-color:rgb(45, 45, 45);
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+footer .socialmedia i:hover{
+    background-color:rgb(91, 91, 91);
+}
+footer .end{
+    color: rgb(143, 142, 142);
+    font-size: 14px;
+    margin-left: 55px;
+    bottom: 0;
+   
+}
+hr{
+   
+   background-color: white;
+  
+}
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,rgb(212, 100, 224),blue);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+.preview h6{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    margin: 10px;
+}
+.preview p{
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+}
+.preview button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    margin: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.preview button:hover{
+    background-color: rgb(188, 188, 188);
+}
+.row2{
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.row2 img{
+   border-radius:50%;
+
+}
+.row2 .play{
+   right: 1px;
+}
+.row2 .col{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}

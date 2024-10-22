@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="bg-black">
+    <div class="sidebar bg-black">
+        <div class="sidebar-nav bg-dark">
+            <div class="logo">
+                <a href=""><img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_White.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="" class="text-decoration-none text-light">
+                    <span><i class="fa-solid fa-house"></i></span>
+                    <span> Home</span>
+                </a></li>
+                <li><a href="https://open.spotify.com/search">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span> Search</span>
+                </a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-nav bg-dark">
+            <div>
+                <a href="" class="a1 p-3"><i class="fa-solid fa-grip-lines-vertical"></i>
+                <span class="library">Your Library</span>
+            </a>
+            </div>
+            <ul class="a2">
+                <li>
+                    <div class="sidebar-scroll">
+                      <div class="create-playlist text-light">
+                        <h5><b>Create your first playlist</b></h5>
+                        <p class="text-light">It's easy, we'll help you</p>
+                        <button>Create Playlist</button>
+                      </div>
+                      <div class="create-playlist text-light">
+                        <h5><b>Let's find some podcast to follow</b></h5>
+                        <p class="text-light">We'll keep you updated on new episodes</p>
+                       <a href="https://open.spotify.com/genre/podcasts-web"> <button>Browse Podcasts</button></a>
+                      </div>
+                    </div>
+                </li>
+               
+            </ul>
+            <div class="privacy">
+                <ul>
+                    <li>
+                        <a href="" class="text-decoration-none text-secondary">Legal</a>
+                        <a href="" class="text-decoration-none text-secondary">Safety & Privacy</a>
+                        <a href="" class="text-decoration-none text-secondary">PrivacyPolicy</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-decoration-none text-secondary">Cookies</a>
+                        <a href="" class="text-decoration-none text-secondary">About Ads</a>
+                        <a href="" class="text-decoration-none text-secondary">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-decoration-none text-secondary">Cookies</a>
+                       
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button><i class="fa-solid fa-globe"></i> English</button>
+            </div>
+        </div>
+       
+    </div>
+    <!-- song section -->
+     <div class="song-section">
+        <div class="top-nav">
+            <div class="prev-btn">
+                <button><i class="fa-solid fa-chevron-left text-secondary fs-5"></i></button>
+                <button><i class="fa-solid fa-chevron-right  text-secondary fs-5"></i></button>
+            </div>
+
+            <div class="login-btn">
+                <a href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F"><button class="signup">Sign Up</button></a>
+               <a href="https://accounts.spotify.com/en-GB/login?continue=https%3A%2F%2Fopen.spotify.com%2F"> <button class="login">Login</button></a>
+            </div>
+        </div>
+        <div class="playlist">
+            <h2>Popular artists</h2>
+            <div class="row2">
+            <div class="row2">
+                <div class="col me-2">
+                    <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU"><img src="https://i.scdn.co/image/ab6761610000f178cb6926f44f620555ba444fca" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Pritam</h6>
+                    <p>Artist</p>
+                </div>
+                <div class="col me-2">
+                    <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"><img src="https://i.scdn.co/image/ab6761610000f1780261696c5df3be99da6ed3f3" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Arjith Singh</h6>
+                    <p>Artist</p>
+                </div>
+                <div class="col me-2">
+                    <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG"><img src="https://i.scdn.co/image/ab6761610000f178b19af0ea736c6228d6eb539c" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>A.R. Rahman</h6>
+                    <p>Artist</p>
+                </div>
+           
+                <div class="col me-2">
+                    <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO"><img src="https://i.scdn.co/image/ab6761610000f178a038d7d87f8577bbb9686bd3" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Sachin-Jigar</h6>
+                    <p>Artist</p>
+                </div>
+                <div class="col me-2">
+                    <a href="https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O"><img src="https://i.scdn.co/image/ab6761610000f1780f0be2054fe9594026a6b843" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Anirudh Ravichander</h6>
+                    <p>Artist</p>
+                </div>
+                
+                <div class="col me-2">
+                    <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507"><img src="https://i.scdn.co/image/ab6761610000f178fb13d10be20fdcb5a670f551" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Vishal Mishra</h6>
+                    <p>Artist</p>
+                </div>
+                
+                <div class="col me-2">
+                    <a href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx"><img src="https://i.scdn.co/image/ab6761610000f178c40600e02356cc86f0debe84" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Atif Aslam</h6>
+                    <p>Artist</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="playlist">
+            <h2>Popular albums</h2>
+            <div class="row d-flex flex-nowrap">
+                <div class="col">
+                    <a href="https://open.spotify.com/album/5lMMC4nIID6IHXNffPt6p3"><img src="https://i.scdn.co/image/ab67616d00001e021e63de6489803c2b39e7f8e5" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>love hotel</h6>
+                    <p>loftovermax</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/album/0Rkv5iqjF2uenfL0OVB8hg"><img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Aashiqui 2</h6>
+                    <p>Mithoon,Arjith Singh</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/album/0LcyzKKw3RjFKL6ygISTeU"><img src="https://i.scdn.co/image/ab67616d00001e029bb2d30b01ac2cada8a8ad03" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Ek Tha Raja</h6>
+                    <p>Badshah</p>
+                </div>
+           
+                <div class="col">
+                    <a href="https://open.spotify.com/album/3I3kZyHUtEA9Y59rJkxtk6"><img src="https://i.scdn.co/image/ab67616d00001e02d5f4378b1ffc9119fdc7306d" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Sajni</h6>
+                    <p>Ram Sampath,Arjith Singh,Prashant Pandey</p>
+                </div>
+                <div class="col">
+                  <a href="https://open.spotify.com/album/45ZIondgVoMB84MQQaUo9T"> <img src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Moosetape</h6>
+                    <p>Sidhu Moose Wala</p>
+                </div>
+                
+                <div class="col">
+                    <a href="https://open.spotify.com/album/3BGU0BqGwBkYDHpfCWFm7I"><img src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Making Memories</h6>
+                    <p>Karan Aujla,Ikky</p>
+                </div>
+                
+                <div class="col">
+                    <a href="https://open.spotify.com/album/0a183xiCHiC1GQd8ou7WXO"><img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Animal</h6>
+                    <p>Manan Bhardwaj,Vishal Mishra,Jaani</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="playlist">
+            <h2>Popular radio</h2>
+            <div class="row d-flex flex-nowrap">
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4oJSdHZrVjxD"><img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Arjith Singh Radio</h6>
+                    <p>With Neha Kakkar,Pritam,KK</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4AnYVmEEo8ws"><img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2FKWNmZWDBZR4dE5KX4plR/en-GB" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Diljith Dosanjh Radio</h6>
+                    <p>With Garry Sandhu,Ranjith Bawa</p>
+                </div>
+                <div class="col">
+                   <a href="https://open.spotify.com/playlist/37i9dQZF1E4mZvA09hvuJo"> <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en-GB" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>AR Rahman Radio</h6>
+                    <p>Sankar Mahadevan</p>
+                </div>
+           
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4vqXjPu7Hg0z"><img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0oOet2f43PA68X5RxKobEy/en-GB" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Shreya Goshal Radio</h6>
+                    <p>With Sonu Nigam,Sunidhi Chouhan</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4xzuMPqbCJfm"><img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>KK Radio</h6>
+                    <p>With Rohit Chauhan</p>
+                </div>
+                
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4r1liuq6feHe"><img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/70B80Lwx2sxti0M1Ng9e8K/en-GB" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Udit Narayan Radio</h6>
+                    <p>Kumar Sanu,Alka Yagnik</p>
+                </div>
+                
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4uawqu1ixozc"><img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2oSONSC9zQ4UonDKnLqksx/en-GB" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Atif Aslam Radio</h6>
+                    <p>Ali Zafar,Rahat Fetah Ali Khan</p>
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <h2>Featured Charts</h2>
+            <div class="row d-flex flex-nowrap">
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF"><img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Top Songs-Global</h6>
+                    <p>Your weekly update of the most played...</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbLp5XoPON0wI"><img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Top Songs-USA</h6>
+                    <p>Your weekly update of the most played...</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"><img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Top 50-Global</h6>
+                    <p>Your daily update of the most played...</p>
+                </div>
+           
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbLRQDuF5jeBp"><img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Top 50-USA</h6>
+                    <p>Your daily update of the most played...</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbLiRSasKsNU9"><img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Viral50-Global</h6>
+                    <p>Your daily update of the most viral played...</p>
+                </div>
+                
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbKuaTI1Z1Afx"><img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Viral50-USA</h6>
+                    <p>Your daily update of the most viral played...</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbLZ52XmnySJg"><img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Top 50-India</h6>
+                    <p>By Spotify</p>
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <h2>Spotify Playlists</h2>
+            <div class="row d-flex flex-nowrap">
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DXa2PvUpywmrr"><img src="https://i.scdn.co/image/ab67706f00000002c61f28bb8f3662ae8f720848" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Party Hits</h6>
+                    <p>A mix of the biggest pop,dance,and hi...</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6"><img src="https://i.scdn.co/image/ab67706f000000020408713c731caaf1f800615a" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Chill Hits</h6>
+                    <p>Kick back to the best new and...</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DX7F6T2n2fegs"><img src="https://i.scdn.co/image/ab67706f0000000282f22593c527716398774f5a" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Throwback Party</h6>
+                    <p>Here it is,the playlist for the...</p>
+                </div>
+           
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U"><img src="https://i.scdn.co/image/ab67706f000000024a83d42ca84e63abc9413b5d" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Rock classics</h6>
+                    <p>Rock legends & epic songs that continu...</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DX5Vy6DFOcx00"><img src="https://i.scdn.co/image/ab67706f0000000258cb9399d2d48a524106c0e4" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>big on the internet</h6>
+                    <p>iykyk</p>
+                </div>
+                
+                <div class="col">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DXdLK5wjKyhVm"><img src="https://i.scdn.co/image/ab67706f00000002fd4af4581daf8d52558ab410" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Chillhop</h6>
+                    <p>Blissed out beasts and head nodding...</p>
+                </div>
+                
+                <div class="col">
+                   <a href="https://open.spotify.com/playlist/37i9dQZF1DWV7EzJMK2FUI"> <img src="https://i.scdn.co/image/ab67706f00000002472120b92edea982b5feb264" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Jazz in the Background</h6>
+                    <p>Soft instrument for Jazz for all your...</p>
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <h2>Trending Episodes</h2>
+            <div class="row d-flex flex-nowrap">
+                <div class="col">
+                    <a href="https://open.spotify.com/episode/6Gl5Y62Znq3M1Fn8ywYRjz"><img src="https://i.scdn.co/image/ab67656300005f1f9f5d8dab58a909ef23fee583" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Welcome back,RJ Balaji-...</h6>
+                    <p>Jun 2021.15 min</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/episode/2nLOsuQXZL4oBbzbYQYYro"><img src="https://i.scdn.co/image/ab67656300005f1f099a357ed0a2a39424f2903d" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>#73:Hostel of Horrors Serial...</h6>
+                    <p>Jun 2021.93 min</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/episode/5A9DkT5qoSsF909vLaOaL0"><img src="https://i.scdn.co/image/ab67656300005f1f9d2abc777125c182cf99b60f" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Anubis:God of Death-Part 2</h6>
+                    <p>Jun 2021.16 min</p>
+                </div>
+           
+                <div class="col">
+                    <a href="https://open.spotify.com/episode/7JEJp2uiED0PsKDwf0vo77"><img src="https://i.scdn.co/image/ab67656300005f1f9d2abc777125c182cf99b60f" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Anubis:God pf Death-Part 1</h6>
+                    <p>Jun 2021.13 min</p>
+                </div>
+                <div class="col">
+                    <a href="https://open.spotify.com/episode/1x1YHdOpYAjwR48eoz1yLL"><img src="https://i.scdn.co/image/ab67656300005f1f36dbb0b2d65004488fcc322f" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Mahabharata Episode 1-...</h6>
+                    <p>April 2014.24 min</p>
+                </div>
+                
+                <div class="col">
+                    <a href="https://open.spotify.com/episode/4ZjiY5692n0Nev7q38tMvB"><img src="https://i.scdn.co/image/ab67656300005f1f65fc4856285f7fcb49c08d43" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Relaxing Rain Sounds for Dee...</h6>
+                    <p>Aug 2019.122 min</p>
+                </div>
+                
+                <div class="col">
+                    <a href="https://open.spotify.com/episode/0ALpJ8EczwShV1p4qyo0Rj"><img src="https://i.scdn.co/image/ab67656300005f1f6807eaee16197dac1dd840e8" alt=""></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h6>Ep 8-Ye Na Thi Hamari Qismat</h6>
+                    <p>Aug 2020.3 min</p>
+                </div>
+            </div>
+        </div>
+       <!-- Footer -->
+<footer class="text-center text-lg-start  text-muted">
+    <!-- Section: Social media -->
+    
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="pt-1">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row1 mt-3">
+          <!-- Grid column -->
+         
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+           
+           <ul>
+            <h6 class="fw-bold mb-4">
+                Company
+              </h6>
+             <li><a href="">About</a></li>
+             <li><a href="">Jobs</a></li>
+             <li><a href="">For the Records</a></li>
+           </ul>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+           
+            <ul>
+                <h6 class="fw-bold mb-4">
+                    Communities
+                   </h6>
+                <li><a href="">For Artists</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Advertising
+                </a></li>
+                <li><a href="">Investors</a></li>
+                <li><a href="">Vendors
+                </a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+           
+            <ul>
+                <h6 class="fw-bold mb-4">
+                    Useful Links
+                   </h6>
+                <li><a href="">Support</a></li>
+                <li><a href="">Free Mobile App</a></li>
+                
+              </ul>
+            
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            
+            <ul>
+                <h6 class="fw-bold mb-4">
+                    Spotify Plans
+                   </h6>
+                <li><a href="">Premium Individual</a></li>
+                <li><a href="">Premium Duo</a></li>
+                <li><a href="">Premium Family
+                </a></li>
+                <li><a href="">Premium Student</a></li>
+                <li><a href="">Spotify Free
+                </a></li>
+              </ul>
+            
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          
+          <div class="socialmedia col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+     <hr>
+    <div class="end text-left p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Spotify AB
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<div class="preview">
+    <div class="text">
+       <h6>
+        Preview of Spotify
+       </h6>
+       <p>Sign up to get unlimited songs and podcasts with occasional ads.No credit card needed.</p>
+    </div>
+    <div class="button">
+        <a href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F"><button>Sign up for free</button></a>
+    </div>
+</div>
+</body>
+</html>
